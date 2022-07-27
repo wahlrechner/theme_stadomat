@@ -1,14 +1,22 @@
+:root {
+    --accent-color: #dbeafe;
+}
+
 body {
     background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-    --tw-gradient-from: #dbeafe;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(254, 226, 226, 0));
+    --tw-gradient-from: var(--accent-color);
     --tw-gradient-to: #e4e4e7;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+@media (prefers-color-scheme: light) {
+    html {
+        background-color: var(--accent-color);
+    }
 }
 
 @media (prefers-color-scheme: dark) {
     body {
-        --tw-gradient-from: #18181b;
-        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(24, 24, 27, 0));
-        --tw-gradient-to: #18181b;
+        background-image: none;
     }
 }

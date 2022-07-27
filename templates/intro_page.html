@@ -1,5 +1,7 @@
-<h1 class="mb-3 text-xl font-semibold text-gray-700 dark:text-gray-100">Willkommen beim {% wahlrechner_name %}</h1>
-<div class="text-left text-gray-600 dark:text-gray-300">
+{% load wahlrechner_name %}
+
+<h1>Willkommen beim {% wahlrechner_name %}</h1>
+<p>
     Am 12. September 2021 findet die niedersächsische Kommunalwahl stattfinden, bei der auch der Stader Stadtrat
     neu gewählt wird. Der Stadtjugendring Stade e.V. bietet eine Plattform, auf der du deine Ansichten mit den
     Positionen der antretenden Parteien vergleichen kannst.
@@ -12,11 +14,15 @@
     Du kannst nun den Stad-O-Mat durchspielen. Lies dir die Thesen genau durch und entscheide, wie du dich zu ihnen
     positionierst. Am Ende wird deine inhaltliche Übereinstimmung mit den einzelnen Parteien verglichen.
     <br><br>
-    <i>Der Stad-O-Mat gibt keine Wahlempfehlungen, sondern ist ein politisches Informationsangebot über die Stader
-        Parteien und ihre Positionen.</i>
-</div>
-<div class="p-3 mt-5 text-gray-400 border border-gray-400 rounded dark:text-gray-200 dark:bg-gray-700 dark:border-none">
+    <i>
+        Der Stad-O-Mat gibt keine Wahlempfehlungen, sondern ist ein politisches Informationsangebot über die Stader
+        Parteien und ihre Positionen.
+    </i>
+</p>
+
+<div class="infobox">
     Der {% wahlrechner_name %} sammelt keinerlei personenbezogene Daten und verwendet keine Cookies.
-    Indem du auf "Start" klickst, stimmt du den <a class="underline"
-        href="https://www.sjr-stade.de/impressum.html#a145">Datenschutzbedingungen</a> zu.
+    Indem du auf "Start" klickst, stimmt du den
+    <a class="underline" href="https://www.sjr-stade.de/impressum.html#a145">Datenschutzbedingungen</a>
+    zu.
 </div>
