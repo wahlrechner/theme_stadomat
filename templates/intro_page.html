@@ -1,24 +1,55 @@
 {% load wahlrechner_name %}
 
 <h1>Willkommen beim {% wahlrechner_name %}</h1>
-<p>
-    Am 12. September 2021 findet die niedersächsische Kommunalwahl stattfinden, bei der auch der Stader Stadtrat
-    neu gewählt wird. Der Stadtjugendring Stade e.V. bietet eine Plattform, auf der du deine Ansichten mit den
-    Positionen der antretenden Parteien vergleichen kannst.
-    <br><br>
-    Wir haben Schülerinnen und Schüler aus Stade nach Statements gefragt, aus diesen haben wir zentrale Thesen
-    erarbeitet. Alle Parteien des Stader Rates haben sich begründet zu den Thesen positioniert. Die genauen
-    Begründungen kannst du dir durchlesen, sobald du den Stad-O-Mat abgeschlossen hast.
-    Mehr Infos zum Projekt findest du <a class="underline" href="https://www.sjr-stade.de/stad-o-mat.php">hier</a>.
-    <br><br>
-    Du kannst nun den Stad-O-Mat durchspielen. Lies dir die Thesen genau durch und entscheide, wie du dich zu ihnen
-    positionierst. Am Ende wird deine inhaltliche Übereinstimmung mit den einzelnen Parteien verglichen.
-    <br><br>
-    <i>
-        Der Stad-O-Mat gibt keine Wahlempfehlungen, sondern ist ein politisches Informationsangebot über die Stader
-        Parteien und ihre Positionen.
-    </i>
-</p>
+
+{% if wahlrechner_title == "nds. Kommunalwahl 2021" or wahlrechner_title == "Kommunalwahl 2021" %}
+
+    {# KOMMUNALWAHL 2021 #}
+
+    <p>
+        Am 12. September 2021 findet die niedersächsische Kommunalwahl stattfinden, bei der auch der Stader Stadtrat
+        neu gewählt wird. Der Stadtjugendring Stade e.V. bietet eine Plattform, auf der du deine Ansichten mit den
+        Positionen der antretenden Parteien vergleichen kannst.
+        <br><br>
+        Wir haben Schülerinnen und Schüler aus Stade nach Statements gefragt, aus diesen haben wir zentrale Thesen
+        erarbeitet. Alle Parteien des Stader Rates haben sich begründet zu den Thesen positioniert. Die genauen
+        Begründungen kannst du dir durchlesen, sobald du den Stad-O-Mat abgeschlossen hast.
+        Mehr Infos zum Projekt findest du <a class="underline" href="https://www.sjr-stade.de/stad-o-mat.php">hier</a>.
+        <br><br>
+        Du kannst nun den Stad-O-Mat durchspielen. Lies dir die Thesen genau durch und entscheide, wie du dich zu ihnen
+        positionierst. Am Ende wird deine inhaltliche Übereinstimmung mit den einzelnen Parteien verglichen.
+        <br><br>
+        <i>
+            Der Stad-O-Mat gibt keine Wahlempfehlungen, sondern ist ein politisches Informationsangebot über die Stader
+            Parteien und ihre Positionen.
+        </i>
+    </p>
+
+{% else %}
+
+    {# LANDTAGSWAHL 2022 #}
+
+    <p>
+        Am 9. Oktober 2022 findet die niedersächsische Landtagswahl statt, bei der auch ein*e Direktabgeordnete*r für
+        unseren Wahlkreis gewählt wird. Der Stadtjugendring Stade e.V. bietet eine Plattform, auf der du deine Ansichten
+        mit den Positionen der Kandidat*innen vergleichen kannst.
+        <br><br>
+        Wir haben Thesen zu den Themenbereichen Mobilität, Digitalisierung, Ehrenamtsförderung, Fördermittel für
+        Jugendarbeit und Jugend in der Gesellschaft erarbeitet. Die Kandidat*innen der Parteien haben sich begründet zu
+        den Thesen positioniert. Die genauen Begründungen kannst du dir durchlesen, sobald du den Stad-O-Mat
+        abgeschlossen hast. Mehr Infos zum Projekt findest du
+        <a class="underline" href="https://www.sjr-stade.de/stad-o-mat.php">hier</a>.
+        <br><br>
+        Du kannst nun den Stad-O-Mat durchspielen. Lies dir die Thesen genau durch und entscheide, wie du dich zu ihnen
+        positionierst. Am Ende wird deine inhaltliche Übereinstimmung mit den einzelnen Kandidat*innen verglichen.
+        <br><br>
+        <i>
+            Der Stad-O-Mat gibt keine Wahlempfehlungen, sondern ist ein politisches Informationsangebot über die
+            Kandidat*innen und ihre Positionen.
+        </i>
+    </p>
+
+{% endif %}
 
 <div class="infobox">
     Der {% wahlrechner_name %} sammelt keinerlei personenbezogene Daten und verwendet keine Cookies.

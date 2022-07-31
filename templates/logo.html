@@ -1,5 +1,7 @@
+{% load wahlrechner_name %}
 {% load static %}
 
 <div class="w-full text-center">
-    <img class="inline mb-3 md:mb-5 max-h-24 sm:max-h-32" src="{% static "logo-stadomat.webp" %}" alt="Stad-O-Mat">
+    <img class="inline max-h-24 sm:max-h-32" src="{% static "logo-stadomat.webp" %}" alt="Stad-O-Mat">
+    <div class="text-gray-500 dark:text-gray-300 font-semibold md:mb-5 mb-3 italic">zur {% wahlrechner_title %}</div>
 </div>
