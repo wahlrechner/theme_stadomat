@@ -2,7 +2,9 @@
 
 <h1>Willkommen beim {% wahlrechner_name %}</h1>
 
-{% if wahlrechner_title == "nds. Kommunalwahl 2021" or wahlrechner_title == "Kommunalwahl 2021" %}
+{% wahlrechner_title as title %}
+
+{% if title == "Kommunalwahl 2021" %}
 
     {# KOMMUNALWAHL 2021 #}
 
