@@ -2,6 +2,12 @@
 
 <h1>Willkommen beim {% wahlrechner_name %}</h1>
 
+{% if not thesen.first %}
+    <div class="infobox mb-4">
+        Der {% wahlrechner_name %} ist noch in Vorbereitung und demnächst auf dieser Seite verfügbar.
+    </div>
+{% endif %}
+
 {% wahlrechner_title as title %}
 
 {% if title == "Kommunalwahl 2021" %}
@@ -53,9 +59,11 @@
 
 {% endif %}
 
-<div class="infobox">
-    Der {% wahlrechner_name %} sammelt keinerlei personenbezogene Daten und verwendet keine Cookies.
-    Indem du auf "Start" klickst, stimmt du den
-    <a class="underline" href="https://www.sjr-stade.de/impressum.html#a145">Datenschutzbedingungen</a>
-    zu.
-</div>
+{% if thesen.first %}
+    <div class="infobox">
+        Der {% wahlrechner_name %} sammelt keinerlei personenbezogene Daten und verwendet keine Cookies.
+        Indem du auf "Start" klickst, stimmt du den
+        <a class="underline" href="https://www.sjr-stade.de/impressum.html#a145">Datenschutzbedingungen</a>
+        zu.
+    </div>
+{% endif %}
