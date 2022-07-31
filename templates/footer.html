@@ -1,3 +1,4 @@
+{% load static %}
 {% load wahlrechner_version %}
 {% load wahlrechner_name %}
 
@@ -10,7 +11,7 @@
         <div class="mb-2 sm:my-auto justify-self-center">
             <a href="https://www.sjr-stade.de/">
                 <img class="inline-block"
-                     src="/static/logo-sjr-stade.webp"
+                     src="{% static "logo-sjr-stade.webp" %}"
                      style="max-height: 8rem;"
                      alt="Stadtjungendring Stade">
             </a>
@@ -19,7 +20,7 @@
         {# 4 Generationen #}
         <div class="mt-2 sm:my-auto justify-self-center">
             <a href="https://www.4generation.de/">
-                <img class="inline-block max-h-24" src="/static/logo-4g.webp" alt="4 Generationen">
+                <img class="inline-block max-h-24" src="{% static "logo-4g.webp" %}" alt="4 Generationen">
             </a>
         </div>
 
