@@ -11,12 +11,17 @@ body {
 
 @media (prefers-color-scheme: light) {
     html {
-        background-color: var(--accent-color);
+        background-color: white;
     }
 }
 
 @media (prefers-color-scheme: dark) {
+    html {
+        background-color: rgb(38 38 38);
+    }
+
     body {
+        background-color: rgb(23 23 23);
         background-image: none;
     }
 }

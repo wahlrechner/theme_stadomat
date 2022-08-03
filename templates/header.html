@@ -1,0 +1,37 @@
+{% load wahlrechner_name %}
+{% wahlrechner_name as n %}
+{% wahlrechner_title as t %}
+
+<div class="menubar">
+
+    <div class="hidden sm:inline-block">Landtagswahl 2022 &#9656;</div>
+    <div class="inline-block sm:hidden">LTW '22 &#9656;</div>
+
+    {% if n == "Stad-O-Mat" and t == "Landtagswahl 2022" %}
+        <a class="active">Stade</a>
+    {% else %}
+        <a href="https://stad-o-mat.de/">Stade</a>
+    {% endif %}
+
+    {% if n == "Delm-O-Mat" and t == "Landtagswahl 2022" %}
+        <a class="active">Apensen</a>
+    {% else %}
+        <a href="https://delm-o-mat.de/">Apensen</a>
+    {% endif %}
+
+    <div class="hidden sm:inline-block">Kommunalwahl 2021 &#9656;</div>
+    <div class="inline-block sm:hidden">KW '21 &#9656;</div>
+
+    {% if n == "Stad-O-Mat" and t == "Kommunalwahl 2021" %}
+        <a class="active">Stade</a>
+    {% else %}
+        <a href="https://kw21.stad-o-mat.de/">Stade</a>
+    {% endif %}
+
+    {% if n == "Buxt-O-Mat" and t == "Kommunalwahl 2021" %}
+        <a class="active">Buxtehude</a>
+    {% else %}
+        <a href="https://buxt-o-mat.de/">Buxtehude</a>
+    {% endif %}
+
+</div>
