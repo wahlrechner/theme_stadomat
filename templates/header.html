@@ -3,35 +3,39 @@
 {% wahlrechner_title as t %}
 
 <div class="menubar">
+    <div class="menu">
 
-    <div class="hidden sm:inline-block">Landtagswahl 2022 &#9656;</div>
-    <div class="inline-block sm:hidden">LTW '22 &#9656;</div>
 
-    {% if n == "Stad-O-Mat" and t == "Landtagswahl 2022" %}
-        <a class="active">Stade</a>
-    {% else %}
-        <a href="https://stad-o-mat.de/">Stade</a>
-    {% endif %}
+        <div class="hidden md:inline-block">Landtagswahl 2022 &#9656;</div>
+        <div class="inline-block md:hidden">LTW '22 &#9656;</div>
 
-    {% if n == "Delm-O-Mat" and t == "Landtagswahl 2022" %}
-        <a class="active">Apensen</a>
-    {% else %}
-        <a href="https://delm-o-mat.de/">Apensen</a>
-    {% endif %}
+        {% if n == "Stad-O-Mat" and t == "Landtagswahl 2022" %}
+            <span class="active">WK 56 (Stade)</span>
+        {% else %}
+            <a href="https://stad-o-mat.de/">WK 56 (Stade)</a>
+        {% endif %}
 
-    <div class="hidden sm:inline-block">Kommunalwahl 2021 &#9656;</div>
-    <div class="inline-block sm:hidden">KW '21 &#9656;</div>
+        {% if n == "Delm-O-Mat" and t == "Landtagswahl 2022" %}
+            <span class="active">WK 55 (Buxtehude)</span>
+        {% else %}
+            <a href="https://delm-o-mat.de/">WK 55 (Buxtehude)</a>
+        {% endif %}
 
-    {% if n == "Stad-O-Mat" and t == "Kommunalwahl 2021" %}
-        <a class="active">Stade</a>
-    {% else %}
-        <a href="https://kw21.stad-o-mat.de/">Stade</a>
-    {% endif %}
+        <div class="hidden md:inline-block">Kommunalwahl 2021 &#9656;</div>
+        <div class="inline-block md:hidden">KW '21 &#9656;</div>
 
-    {% if n == "Buxt-O-Mat" and t == "Kommunalwahl 2021" %}
-        <a class="active">Buxtehude</a>
-    {% else %}
-        <a href="https://buxt-o-mat.de/">Buxtehude</a>
-    {% endif %}
+        {% if n == "Stad-O-Mat" and t == "Kommunalwahl 2021" %}
+            <span class="active">Stade</span>
+        {% else %}
+            <a href="https://kw21.stad-o-mat.de/">Stade</a>
+        {% endif %}
 
+        {% if n == "Buxt-O-Mat" and t == "Kommunalwahl 2021" %}
+            <span class="active">Buxtehude</span>
+        {% else %}
+            <a href="https://buxt-o-mat.de/">Buxtehude</a>
+        {% endif %}
+
+
+    </div>
 </div>
